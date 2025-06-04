@@ -1,7 +1,7 @@
 package net.incoder.industrial.block;
 
 import net.incoder.industrial.Industrial;
-import net.incoder.industrial.item.Bronze;
+import net.incoder.industrial.item.ModItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -27,7 +27,7 @@ public class BronzeBlock {
     }
 
     private static <T extends Block> void  registerBlockItem(String name, DeferredBlock<T> block) {
-        Bronze.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItem.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

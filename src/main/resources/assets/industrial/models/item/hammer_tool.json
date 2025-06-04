@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-      "layer0": "industrial:item/bronze"
+    "layer0": "industrial:item/hammer_tool"
   }
 }

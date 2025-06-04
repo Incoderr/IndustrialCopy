@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "industrial:iron_plate"
+    }
+  },
+  "pattern": [
+    "2 2",
+    " 2 ",
+    "1 1"
+  ],
+  "result": {
+    "count": 1,
+    "id": "industrial:cutter_tool"
+  }
+}

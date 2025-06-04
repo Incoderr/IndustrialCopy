@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " 11",
+    "221",
+    " 11"
+  ],
+  "result": {
+    "count": 1,
+    "id": "industrial:hammer_tool"
+  }
+}

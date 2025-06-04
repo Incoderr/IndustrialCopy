@@ -1,8 +1,19 @@
 {
 
-  "item.industrial.bronze": "Бронза",
+  "item.industrial.bronze_ingot": "Бронзовый слиток",
+  "item.industrial.tin_ingot": "Оловяный слиток",
+  "item.industrial.silver_ingot": "Серебрянный слиток",
+  "item.industrial.composite_ingot": "Композитный слиток",
+
+  "item.industrial.iron_plate": "Железная пластина",
+  "item.industrial.copper_plate": "Медная пластина",
+  "item.industrial.bronze_plate": "Бронзовая пластина",
+  "item.industrial.tin_plate": "Оловяная пластина",
+
+  "item.industrial.hammer_tool": "Молот",
+  "item.industrial.cutter_tool": "Кусачки",
 
   "block.industrial.bronze_block": "Бронзовый блок",
 
-  "creativetab.industrial.bronze": "Завод"
+  "creativetab.industrial.bronze_ingot": "Завод"
 }
