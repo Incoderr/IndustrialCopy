@@ -1,14 +1,45 @@
 {
 
-  "item.industrial.bronze_ingot": "Бронзовый слиток",
-  "item.industrial.tin_ingot": "Оловяный слиток",
+
+
   "item.industrial.silver_ingot": "Серебрянный слиток",
+
+  "item.industrial.lead_ingot": "Свинцовый слиток",
+
   "item.industrial.composite_ingot": "Композитный слиток",
 
   "item.industrial.iron_plate": "Железная пластина",
+  "item.industrial.iron_casing": "Железная оболочка",
+
+  "item.industrial.gold_plate": "Золотая пластина",
+  "item.industrial.gold_casing": "Золотая оболочка",
+
+  "item.industrial.lead_plate": "Свинцовая пластина",
+  "item.industrial.lead_casing": "Свинцовая оболочка",
+
   "item.industrial.copper_plate": "Медная пластина",
+  "item.industrial.copper_casing": "Медная оболочка",
+
+  "item.industrial.bronze_ingot": "Бронзовый слиток",
   "item.industrial.bronze_plate": "Бронзовая пластина",
+  "item.industrial.bronze_casing": "Бронзовая оболочка",
+
+  "item.industrial.bronze_pickaxe": "Бронзовая кирка",
+  "item.industrial.bronze_axe": "Бронзовый топор",
+  "item.industrial.bronze_shovel": "Бронзовая лопата",
+  "item.industrial.bronze_hoe": "Бронзовая мотыга",
+  "item.industrial.bronze_sword": "Бронзовый меч",
+
+  "item.industrial.bronze_helmet": "Бронзовый шлем",
+  "item.industrial.bronze_chestplate": "Бронзовый нагрудник",
+  "item.industrial.bronze_leggings": "Бронзовые поножи",
+  "item.industrial.bronze_boots": "Бронзовые ботинки",
+
+  "item.industrial.tin_ingot": "Оловяный слиток",
   "item.industrial.tin_plate": "Оловяная пластина",
+  "item.industrial.tin_casing": "Оловяная оболочка",
+  "block.industrial.tin_ore": "Оловяная руда",
+  "item.industrial.raw_tin": "Сырое олово",
 
   "item.industrial.hammer_tool": "Молот",
   "item.industrial.cutter_tool": "Кусачки",

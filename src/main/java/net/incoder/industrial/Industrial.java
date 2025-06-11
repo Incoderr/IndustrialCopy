@@ -1,6 +1,7 @@
 package net.incoder.industrial;
 
-import net.incoder.industrial.block.BronzeBlock;
+
+import net.incoder.industrial.block.ModBlock;
 import net.incoder.industrial.item.*;
 import org.slf4j.Logger;
 
@@ -49,7 +50,7 @@ public class Industrial {
         ModItem.register(modEventBus);
 
         //Block
-        BronzeBlock.register(modEventBus);
+        ModBlock.register(modEventBus);
 
 
 

@@ -3,8 +3,8 @@ package net.incoder.industrial.tool;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class ToolHammer extends Item {
-    public ToolHammer(Properties properties) {
+public class HammerTool extends Item {
+    public HammerTool(Properties properties) {
         super(properties.durability(64));
     }
     @Override

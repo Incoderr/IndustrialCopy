@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:copper_ingot"
+      "item": "industrial:copper_plate"
     },
     {
       "item": "industrial:hammer_tool"
     }
   ],
   "result": {
-    "id": "industrial:copper_plate",
-    "count": 1
+    "id": "industrial:copper_casing",
+    "count": 2
   }
 }
