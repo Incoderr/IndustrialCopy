@@ -1,11 +1,7 @@
 {
-
-
-
   "item.industrial.silver_ingot": "Серебрянный слиток",
-
   "item.industrial.lead_ingot": "Свинцовый слиток",
-
+  "item.industrial.steel_ingot": "Стальной слиток",
   "item.industrial.composite_ingot": "Композитный слиток",
 
   "item.industrial.iron_plate": "Железная пластина",
@@ -38,13 +34,37 @@
   "item.industrial.tin_ingot": "Оловяный слиток",
   "item.industrial.tin_plate": "Оловяная пластина",
   "item.industrial.tin_casing": "Оловяная оболочка",
-  "block.industrial.tin_ore": "Оловяная руда",
-  "item.industrial.raw_tin": "Сырое олово",
+
+  "item.industrial.raw_tin": "Рудное олово",
+
+  "item.industrial.raw_silver": "Рудное серебро",
+
+  "item.industrial.raw_lead": "Рудный свинец",
 
   "item.industrial.hammer_tool": "Молот",
   "item.industrial.cutter_tool": "Кусачки",
 
+
+
   "block.industrial.bronze_block": "Бронзовый блок",
+  "block.industrial.tin_block": "Оловяный блок",
+  "block.industrial.silver_block": "Серебрянный блок",
+  "block.industrial.steel_block": "Стальной блок",
+  "block.industrial.lead_block": "Свинцовый блок",
+
+  "block.industrial.tin_ore": "Оловяная руда",
+  "block.industrial.lead_ore": "Свинцовая руда",
+  "block.industrial.silver_ore": "Серебрянная руда",
+
+  "block.industrial.hevea_log": "Бревно гевеи",
+  "block.industrial.hevea_wood": "Гевея",
+  "block.industrial.hevea_planks": "Доски гевеи",
+  "block.industrial.hevea_leaves": "Листья гевеи",
+  "block.industrial.hevea_sapling": "Саженец гевеи",
+  "block.industrial.stripped_hevea_log": "Обтёсанное бревно гевеи",
+  "block.industrial.stripped_hevea_wood": "Обтёсанное древесина гевеи",
+
+
 
   "creativetab.industrial.bronze_ingot": "Завод"
 }

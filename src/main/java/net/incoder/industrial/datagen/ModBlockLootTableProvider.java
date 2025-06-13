@@ -15,7 +15,9 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.fml.common.Mod;
 
 
 import java.util.Set;
@@ -29,20 +31,35 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlock.BRONZE_BLOCK.get());
+        dropSelf(ModBlock.TIN_BLOCK.get());
+        dropSelf(ModBlock.LEAD_BLOCK.get());
+        dropSelf(ModBlock.SILVER_BLOCK.get());
+        dropSelf(ModBlock.STEEL_BLOCK.get());
 
-        add(ModBlock.TIN_ORE.get(),
-                Block -> createOreDrop(ModBlock.TIN_ORE.get(), ModItem.RAW_TIN.get()));
-        add(ModBlock.TIN_ORE.get(),
-                block -> createMultipleOreDrops(ModBlock.TIN_ORE.get(), ModItem.RAW_TIN.get(), 2, 3));
+        add(ModBlock.TIN_ORE.get(), block -> createTinOreDrop(ModBlock.TIN_ORE.get(), ModItem.RAW_TIN.get()));
+        add(ModBlock.LEAD_ORE.get(), block -> createTinOreDrop(ModBlock.LEAD_ORE.get(), ModItem.RAW_LEAD.get()));
+        add(ModBlock.SILVER_ORE.get(), block -> createTinOreDrop(ModBlock.SILVER_ORE.get(), ModItem.RAW_SILVER.get()));
 
+        this.dropSelf(ModBlock.HEVEA_LOG.get());
+        this.dropSelf(ModBlock.HEVEA_WOOD.get());
+        this.dropSelf(ModBlock.STRIPPED_HEVEA_LOG.get());
+        this.dropSelf(ModBlock.STRIPPED_HEVEA_WOOD.get());
+        this.dropSelf(ModBlock.HEVEA_PLANKS.get());
+        this.dropSelf(ModBlock.HEVEA_SAPLING.get());
+
+        this.add(ModBlock.HEVEA_LEAVES.get(), block ->
+           createLeavesDrops(block, ModBlock.HEVEA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createSilkTouchDispatchTable(pBlock,
-                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
-                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
+    protected LootTable.Builder createTinOreDrop(Block block, Item item) {
+        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return createSilkTouchDispatchTable(block,
+                this.applyExplosionDecay(block,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0F))) // Без удачи — 1 единица
+                                .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE))) // Увеличение с удачей
+                )
+        );
     }
 
     @Override

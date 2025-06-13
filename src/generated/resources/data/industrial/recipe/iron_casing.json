@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "industrial:iron_plate"
+    },
+    {
+      "item": "industrial:hammer_tool"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "industrial:iron_casing"
+  }
+}

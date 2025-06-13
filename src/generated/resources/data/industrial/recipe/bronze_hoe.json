@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "industrial:bronze_ingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "11 ",
+    " 2 ",
+    " 2 "
+  ],
+  "result": {
+    "count": 1,
+    "id": "industrial:bronze_hoe"
+  }
+}
