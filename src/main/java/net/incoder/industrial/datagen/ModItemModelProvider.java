@@ -6,7 +6,6 @@ import net.incoder.industrial.item.ModItem;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -61,7 +60,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlock.HEVEA_SAPLING);
 
         basicItem(ModItem.TREETAP.get());
-        basicItem(ModItem.RUBBER.get());
+        basicItem(ModItem.RAW_RUBBER.get());
     }
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),

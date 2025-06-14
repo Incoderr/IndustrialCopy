@@ -1,5 +1,8 @@
-// 1.21.1	2025-06-13T12:06:31.9820066	Loot Tables
+// 1.21.1	2025-06-14T14:37:01.6077858	Loot Tables
 67b06cc717a40c93776e1e8aad6606f86e43be3a data/industrial/loot_table/blocks/bronze_block.json
+3df2a5073bb5a23576af06803872cce12e732b61 data/industrial/loot_table/blocks/deepslate_lead_ore.json
+8b08daf7447efb4853908186b8db9258e26475b7 data/industrial/loot_table/blocks/deepslate_silver_ore.json
+d815391b96a72664ebdd133bcf253e931fe64cbb data/industrial/loot_table/blocks/deepslate_tin_ore.json
 fcf51b515327cb2af2dbfb1664700bf1e0b5fc6f data/industrial/loot_table/blocks/hevea_leaves.json
 b74026db072f58bb228eb2d4742bbc8778846429 data/industrial/loot_table/blocks/hevea_log.json
 f2921046df10c948f508e3065e64c4a28f00507c data/industrial/loot_table/blocks/hevea_planks.json

@@ -22,13 +22,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         //SMELTABLES
-        List<ItemLike> TIN_SMELTABLES = List.of(ModItem.RAW_TIN,
+        List<ItemLike> TIN_SMELTABLES = List.of(
+                ModItem.RAW_TIN,
+                ModBlock.DEEPSLATE_TIN_ORE,
                 ModBlock.TIN_ORE);
 
-        List<ItemLike> LEAD_SMELTABLES = List.of(ModItem.RAW_LEAD,
+        List<ItemLike> LEAD_SMELTABLES = List.of(
+                ModItem.RAW_LEAD,
+                ModBlock.DEEPSLATE_LEAD_ORE,
                 ModBlock.LEAD_ORE);
 
-        List<ItemLike> SILVER_SMELTABLES = List.of(ModItem.RAW_SILVER,
+        List<ItemLike> SILVER_SMELTABLES = List.of(
+                ModItem.RAW_SILVER,
+                ModBlock.DEEPSLATE_SILVER_ORE,
                 ModBlock.SILVER_ORE);
         //PLATE
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItem.BRONZE_PLATE.get())

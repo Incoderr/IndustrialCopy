@@ -73,8 +73,11 @@ public class ModItem {
     public static final DeferredItem<Item> CUTTER_TOOL = ITEMS.register("cutter_tool",
             () -> new CutterTool(new Item.Properties().durability(64)));
     //
-    public static final DeferredItem<Item> RUBBER = ITEMS.registerSimpleItem("rubber");
-    public static final DeferredItem<Item> TREETAP = ITEMS.registerSimpleItem("treetap", new Item.Properties().durability(32));
+    public static final DeferredItem<Item> RAW_RUBBER = ITEMS.register("raw_rubber",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> TREETAP = ITEMS.register("treetap",
+            () -> new Item(new Item.Properties().durability(32)));
     //
     public static final DeferredItem<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(
             ToolTier.BRONZE,

@@ -44,8 +44,7 @@
       "state": {
         "Name": "industrial:hevea_log",
         "Properties": {
-          "axis": "y",
-          "has_rubber": "true"
+          "axis": "y"
         }
       }
     }

@@ -7,6 +7,9 @@
     "industrial:silver_block",
     "industrial:tin_ore",
     "industrial:lead_ore",
-    "industrial:silver_ore"
+    "industrial:silver_ore",
+    "industrial:deepslate_tin_ore",
+    "industrial:deepslate_lead_ore",
+    "industrial:deepslate_silver_ore"
   ]
 }

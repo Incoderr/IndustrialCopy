@@ -7,7 +7,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -30,6 +29,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlock.LEAD_ORE);
         blockWithItem(ModBlock.SILVER_ORE);
 
+        blockWithItem(ModBlock.DEEPSLATE_TIN_ORE);
+        blockWithItem(ModBlock.DEEPSLATE_LEAD_ORE);
+        blockWithItem(ModBlock.DEEPSLATE_SILVER_ORE);
 
         blockItem(ModBlock.HEVEA_LOG);
         blockItem(ModBlock.HEVEA_WOOD);

@@ -40,6 +40,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlock.LEAD_ORE.get(), block -> createTinOreDrop(ModBlock.LEAD_ORE.get(), ModItem.RAW_LEAD.get()));
         add(ModBlock.SILVER_ORE.get(), block -> createTinOreDrop(ModBlock.SILVER_ORE.get(), ModItem.RAW_SILVER.get()));
 
+        add(ModBlock.DEEPSLATE_TIN_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_TIN_ORE.get(), ModItem.RAW_TIN.get()));
+        add(ModBlock.DEEPSLATE_LEAD_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_LEAD_ORE.get(), ModItem.RAW_LEAD.get()));
+        add(ModBlock.DEEPSLATE_SILVER_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_SILVER_ORE.get(), ModItem.RAW_SILVER.get()));
+
         this.dropSelf(ModBlock.HEVEA_LOG.get());
         this.dropSelf(ModBlock.HEVEA_WOOD.get());
         this.dropSelf(ModBlock.STRIPPED_HEVEA_LOG.get());

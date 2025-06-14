@@ -1,4 +1,13 @@
-// 1.21.1	2025-06-13T22:03:02.1500319	Registries
+// 1.21.1	2025-06-14T15:45:34.4183823	Registries
+b9359dc2ac7ef0849ba795162ed1e48090834450 data/industrial/neoforge/biome_modifier/add_lead_ore.json
+64a70ef0c34a53333692d944c29854fd1ae12f3c data/industrial/neoforge/biome_modifier/add_silver_ore.json
+5f7dd3608fb5d59902dbe7f04a42d2a5bb260c17 data/industrial/neoforge/biome_modifier/add_tin_ore.json
 9684cb846476336979eedfe7f230e7d3334ca976 data/industrial/neoforge/biome_modifier/add_tree_hevea.json
-0ab74d739f3b2cb16a45ba5c70b72ab3ae68d474 data/industrial/worldgen/configured_feature/hevea.json
+3e432fc6f236e1ac4de7a643df3b3da816a2b1c0 data/industrial/worldgen/configured_feature/hevea.json
+de6577489bfb844d3adc5ac8900ae71162f003cd data/industrial/worldgen/configured_feature/lead_ore.json
+fba9ec9ca9b74aeccb9af62f656fdc876537aa4c data/industrial/worldgen/configured_feature/silver_ore.json
+9185ab9334ea8c86d8eecf80d9de7cb281e6a24b data/industrial/worldgen/configured_feature/tin_ore.json
 d8057d6f83b07fafc3e1608e1f253b264862cccd data/industrial/worldgen/placed_feature/hevea_placed.json
+de91d33e274b8ea95c846c3fe6a33b7f09c979ee data/industrial/worldgen/placed_feature/lead_ore_placed.json
+dc2647bb62dfe8526961d02e535d7c1bd05870de data/industrial/worldgen/placed_feature/silver_ore_placed.json
+69edad183a4ab05186500fbce251f40000ddb70a data/industrial/worldgen/placed_feature/tin_ore_placed.json

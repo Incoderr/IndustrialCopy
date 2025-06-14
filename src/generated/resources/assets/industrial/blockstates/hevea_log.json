@@ -1,27 +1,15 @@
 {
   "variants": {
-    "axis=x,has_rubber=false": {
-      "model": "industrial:block/hevea_log_hevea_log",
+    "axis=x": {
+      "model": "industrial:block/hevea_log_horizontal",
       "x": 90,
       "y": 90
     },
-    "axis=x,has_rubber=true": {
-      "model": "industrial:block/hevea_log_hevea_log_rubber",
-      "x": 90,
-      "y": 90
+    "axis=y": {
+      "model": "industrial:block/hevea_log"
     },
-    "axis=y,has_rubber=false": {
-      "model": "industrial:block/hevea_log_hevea_log"
-    },
-    "axis=y,has_rubber=true": {
-      "model": "industrial:block/hevea_log_hevea_log_rubber"
-    },
-    "axis=z,has_rubber=false": {
-      "model": "industrial:block/hevea_log_hevea_log",
-      "x": 90
-    },
-    "axis=z,has_rubber=true": {
-      "model": "industrial:block/hevea_log_hevea_log_rubber",
+    "axis=z": {
+      "model": "industrial:block/hevea_log_horizontal",
       "x": 90
     }
   }

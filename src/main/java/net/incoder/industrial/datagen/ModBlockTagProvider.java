@@ -27,7 +27,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                 .add(ModBlock.TIN_ORE.get())
                 .add(ModBlock.LEAD_ORE.get())
-                .add(ModBlock.SILVER_ORE.get());
+                .add(ModBlock.SILVER_ORE.get())
+
+                .add(ModBlock.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlock.DEEPSLATE_LEAD_ORE.get())
+                .add(ModBlock.DEEPSLATE_SILVER_ORE.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlock.HEVEA_LOG.get())

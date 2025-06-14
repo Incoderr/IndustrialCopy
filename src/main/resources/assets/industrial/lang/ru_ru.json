@@ -35,11 +35,11 @@
   "item.industrial.tin_plate": "Оловяная пластина",
   "item.industrial.tin_casing": "Оловяная оболочка",
 
-  "item.industrial.raw_tin": "Рудное олово",
+  "item.industrial.raw_tin": "Необработанное олово",
 
-  "item.industrial.raw_silver": "Рудное серебро",
+  "item.industrial.raw_silver": "Необработанное серебро",
 
-  "item.industrial.raw_lead": "Рудный свинец",
+  "item.industrial.raw_lead": "Необработанный свинец",
 
   "item.industrial.hammer_tool": "Молот",
   "item.industrial.cutter_tool": "Кусачки",
@@ -56,14 +56,20 @@
   "block.industrial.lead_ore": "Свинцовая руда",
   "block.industrial.silver_ore": "Серебрянная руда",
 
+  "block.industrial.deepslate_tin_ore": "Глубинная оловяная руда",
+  "block.industrial.deepslate_lead_ore": "Глубинная свинцовая руда",
+  "block.industrial.deepslate_silver_ore": "Глубинная серебрянная руда",
+
   "block.industrial.hevea_log": "Бревно гевеи",
   "block.industrial.hevea_wood": "Гевея",
   "block.industrial.hevea_planks": "Доски гевеи",
   "block.industrial.hevea_leaves": "Листья гевеи",
   "block.industrial.hevea_sapling": "Саженец гевеи",
   "block.industrial.stripped_hevea_log": "Обтёсанное бревно гевеи",
-  "block.industrial.stripped_hevea_wood": "Обтёсанное древесина гевеи",
+  "block.industrial.stripped_hevea_wood": "Обтёсанная древесина гевеи",
 
+  "item.industrial.treetap": "Краник",
+  "item.industrial.rubber": "Сырой каучук",
 
 
   "creativetab.industrial.bronze_ingot": "Завод"

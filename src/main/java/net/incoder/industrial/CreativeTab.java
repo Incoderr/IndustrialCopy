@@ -55,7 +55,7 @@ public class CreativeTab {
                         output.accept(ModItem.HAMMER_TOOL);
                         output.accept(ModItem.CUTTER_TOOL);
                         output.accept(ModItem.TREETAP);
-                        output.accept(ModItem.RUBBER);
+                        output.accept(ModItem.RAW_RUBBER);
                         //
                         //ARMOR
                         output.accept(ModItem.BRONZE_HELMET);
@@ -72,6 +72,10 @@ public class CreativeTab {
                         output.accept(ModBlock.TIN_ORE);
                         output.accept(ModBlock.LEAD_ORE);
                         output.accept(ModBlock.SILVER_ORE);
+                        //
+                        output.accept(ModBlock.DEEPSLATE_TIN_ORE);
+                        output.accept(ModBlock.DEEPSLATE_LEAD_ORE);
+                        output.accept(ModBlock.DEEPSLATE_SILVER_ORE);
                         //WOODS
                         output.accept(ModBlock.HEVEA_LOG);
                         output.accept(ModBlock.HEVEA_WOOD);
