@@ -182,8 +182,9 @@ public class ModBlock {
 
     //WIRE
     public static final DeferredBlock<Block> COPPER_WIRE = registerBlock("copper_wire",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new WireBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
+                    .noOcclusion()
                     .sound(SoundType.WOOL)
                     .requiresCorrectToolForDrops()));
     //

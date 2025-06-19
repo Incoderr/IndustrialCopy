@@ -62,7 +62,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlock.REINFORCED_GLASS);
 
-        blockWithItem(ModBlock.COPPER_WIRE);
+
 
     }
 

@@ -2,6 +2,7 @@ package net.incoder.industrial;
 
 
 import net.incoder.industrial.block.ModBlock;
+import net.incoder.industrial.block.WireBlock;
 import net.incoder.industrial.entity.ModBlockEntities;
 import net.incoder.industrial.item.*;
 import net.incoder.industrial.screen.ModMenuTypes;
