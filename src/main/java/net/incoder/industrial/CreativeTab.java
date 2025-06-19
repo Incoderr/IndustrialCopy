@@ -34,6 +34,9 @@ public class CreativeTab {
                         output.accept(ModItem.BRONZE_PLATE);
                         output.accept(ModItem.LEAD_PLATE);
                         output.accept(ModItem.GOLD_PLATE);
+                        output.accept(ModItem.STEEL_PLATE);
+
+                        output.accept(ModItem.COMPOSITE);
                         //CASING
                         output.accept(ModItem.TIN_CASING);
                         output.accept(ModItem.IRON_CASING);
@@ -56,6 +59,7 @@ public class CreativeTab {
                         output.accept(ModItem.CUTTER_TOOL);
                         output.accept(ModItem.TREETAP);
                         output.accept(ModItem.RAW_RUBBER);
+                        output.accept(ModItem.RUBBER);
                         //
                         //ARMOR
                         output.accept(ModItem.BRONZE_HELMET);
@@ -68,14 +72,23 @@ public class CreativeTab {
                         output.accept(ModBlock.LEAD_BLOCK);
                         output.accept(ModBlock.STEEL_BLOCK);
                         output.accept(ModBlock.SILVER_BLOCK);
+
+                        output.accept(ModBlock.REINFORCED_GLASS);
+                        //WIRE
+                        output.accept(ModBlock.COPPER_WIRE);
+                        //
+                        output.accept(ModBlock.MACHINE_BODY);
+                        output.accept(ModBlock.IMPROVED_MACHINE_BODY);
                         //ORE
                         output.accept(ModBlock.TIN_ORE);
                         output.accept(ModBlock.LEAD_ORE);
                         output.accept(ModBlock.SILVER_ORE);
+                        output.accept(ModBlock.URAN_ORE);
                         //
                         output.accept(ModBlock.DEEPSLATE_TIN_ORE);
                         output.accept(ModBlock.DEEPSLATE_LEAD_ORE);
                         output.accept(ModBlock.DEEPSLATE_SILVER_ORE);
+                        output.accept(ModBlock.DEEPSLATE_URAN_ORE);
                         //WOODS
                         output.accept(ModBlock.HEVEA_LOG);
                         output.accept(ModBlock.HEVEA_WOOD);
@@ -84,6 +97,13 @@ public class CreativeTab {
                         output.accept(ModBlock.HEVEA_PLANKS);
                         output.accept(ModBlock.HEVEA_LEAVES);
                         output.accept(ModBlock.HEVEA_SAPLING);
+                        //
+                        output.accept(ModItem.COIL);
+                        output.accept(ModItem.ELECTRIC_DRIVE);
+                        output.accept(ModItem.ELECTRICAL_DIAGRAM);
+                        output.accept(ModItem.ELECTRIC_MOTOR);
+                        //MACHINE
+                        output.accept(ModBlock.IRON_FURNACE);
                         //
                     })
                     .build());

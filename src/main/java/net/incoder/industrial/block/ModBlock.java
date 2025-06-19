@@ -1,6 +1,7 @@
 package net.incoder.industrial.block;
 
 import net.incoder.industrial.Industrial;
+import net.incoder.industrial.block.custom.IronFurnaceBlock;
 import net.incoder.industrial.block.custom.ModFlammableRotatedPillarBlock;
 import net.incoder.industrial.item.ModItem;
 import net.incoder.industrial.worldgen.tree.ModTreeGrows;
@@ -25,47 +26,102 @@ public class ModBlock {
     //BLOCK
     public static final DeferredBlock<Block> BRONZE_BLOCK = registerBlock("bronze_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops()));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TIN_BLOCK = registerBlock("tin_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops()));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> LEAD_BLOCK = registerBlock("lead_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops()));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops()));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> MACHINE_BODY = registerBlock("machine_body",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> IMPROVED_MACHINE_BODY = registerBlock("improved_machine_body",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> REINFORCED_GLASS = registerBlock("reinforced_glass",
+            () -> new ReinforcedGlass(BlockBehaviour.Properties.of()
+                    .strength(10f, 40f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()
+                    .isViewBlocking((state, level, pos) -> false)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops()));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()));
     //ORE
     public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> LEAD_ORE = registerBlock("lead_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> URAN_ORE = registerBlock("uran_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_URAN_ORE = registerBlock("deepslate_uran_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
     //
     //WOOD
     public static final DeferredBlock<Block> HEVEA_LOG = registerBlock("hevea_log",
@@ -119,6 +175,17 @@ public class ModBlock {
 
     public static final DeferredBlock<Block> HEVEA_SAPLING = registerBlock("hevea_sapling",
             () -> new SaplingBlock(ModTreeGrows.HEVEA, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+    //
+    //MACHINE
+    public static final DeferredBlock<Block> IRON_FURNACE = registerBlock("iron_furnace",
+            () -> new IronFurnaceBlock(BlockBehaviour.Properties.of()));
+
+    //WIRE
+    public static final DeferredBlock<Block> COPPER_WIRE = registerBlock("copper_wire",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .sound(SoundType.WOOL)
+                    .requiresCorrectToolForDrops()));
     //
     private static <T extends Block> DeferredBlock <T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name,block);

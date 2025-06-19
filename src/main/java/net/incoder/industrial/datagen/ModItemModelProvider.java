@@ -42,6 +42,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItem.GOLD_PLATE.get());
         basicItem(ModItem.IRON_PLATE.get());
         basicItem(ModItem.COPPER_PLATE.get());
+        basicItem(ModItem.STEEL_PLATE.get());
+
+        basicItem(ModItem.COMPOSITE.get());
 
         basicItem(ModItem.TIN_CASING.get());
         basicItem(ModItem.LEAD_CASING.get());
@@ -61,7 +64,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItem.TREETAP.get());
         basicItem(ModItem.RAW_RUBBER.get());
+        basicItem(ModItem.RUBBER.get());
+        basicItem(ModItem.COIL.get());
+
+        basicItem(ModItem.ELECTRIC_DRIVE.get());
+        basicItem(ModItem.ELECTRICAL_DIAGRAM.get());
+        basicItem(ModItem.ELECTRIC_MOTOR.get());
     }
+    //
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",

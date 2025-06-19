@@ -1,23 +1,26 @@
 {
+  "item.industrial.bronze_ingot": "Бронзовый слиток",
   "item.industrial.silver_ingot": "Серебрянный слиток",
   "item.industrial.lead_ingot": "Свинцовый слиток",
   "item.industrial.steel_ingot": "Стальной слиток",
+  "item.industrial.tin_ingot": "Оловяный слиток",
   "item.industrial.composite_ingot": "Композитный слиток",
 
+  "item.industrial.composite": "Композит",
+
   "item.industrial.iron_plate": "Железная пластина",
-  "item.industrial.iron_casing": "Железная оболочка",
-
   "item.industrial.gold_plate": "Золотая пластина",
-  "item.industrial.gold_casing": "Золотая оболочка",
-
   "item.industrial.lead_plate": "Свинцовая пластина",
-  "item.industrial.lead_casing": "Свинцовая оболочка",
-
   "item.industrial.copper_plate": "Медная пластина",
-  "item.industrial.copper_casing": "Медная оболочка",
-
-  "item.industrial.bronze_ingot": "Бронзовый слиток",
   "item.industrial.bronze_plate": "Бронзовая пластина",
+  "item.industrial.tin_plate": "Оловяная пластина",
+  "item.industrial.steel_plate": "Cтальная пластина",
+
+  "item.industrial.iron_casing": "Железная оболочка",
+  "item.industrial.gold_casing": "Золотая оболочка",
+  "item.industrial.tin_casing": "Оловяная оболочка",
+  "item.industrial.lead_casing": "Свинцовая оболочка",
+  "item.industrial.copper_casing": "Медная оболочка",
   "item.industrial.bronze_casing": "Бронзовая оболочка",
 
   "item.industrial.bronze_pickaxe": "Бронзовая кирка",
@@ -31,20 +34,16 @@
   "item.industrial.bronze_leggings": "Бронзовые поножи",
   "item.industrial.bronze_boots": "Бронзовые ботинки",
 
-  "item.industrial.tin_ingot": "Оловяный слиток",
-  "item.industrial.tin_plate": "Оловяная пластина",
-  "item.industrial.tin_casing": "Оловяная оболочка",
-
   "item.industrial.raw_tin": "Необработанное олово",
-
   "item.industrial.raw_silver": "Необработанное серебро",
-
   "item.industrial.raw_lead": "Необработанный свинец",
 
   "item.industrial.hammer_tool": "Молот",
   "item.industrial.cutter_tool": "Кусачки",
 
+  "block.industrial.iron_furnace": "Шняга",
 
+  "block.industrial.reinforced_glass": "Укреплённое стекло",
 
   "block.industrial.bronze_block": "Бронзовый блок",
   "block.industrial.tin_block": "Оловяный блок",
@@ -55,10 +54,12 @@
   "block.industrial.tin_ore": "Оловяная руда",
   "block.industrial.lead_ore": "Свинцовая руда",
   "block.industrial.silver_ore": "Серебрянная руда",
+  "block.industrial.uran_ore": "Урановая руда",
 
   "block.industrial.deepslate_tin_ore": "Глубинная оловяная руда",
   "block.industrial.deepslate_lead_ore": "Глубинная свинцовая руда",
   "block.industrial.deepslate_silver_ore": "Глубинная серебрянная руда",
+  "block.industrial.deepslate_uran_ore": "Глубинная урановая руда",
 
   "block.industrial.hevea_log": "Бревно гевеи",
   "block.industrial.hevea_wood": "Гевея",
@@ -69,7 +70,19 @@
   "block.industrial.stripped_hevea_wood": "Обтёсанная древесина гевеи",
 
   "item.industrial.treetap": "Краник",
-  "item.industrial.rubber": "Сырой каучук",
+  "item.industrial.raw_rubber": "Сырой каучук",
+  "item.industrial.rubber": "Резина",
+
+  "item.industrial.coil": "Катушка",
+  "item.industrial.electric_drive": "Электропривод",
+  "item.industrial.electrical_diagram": "Электросхема",
+  "item.industrial.electric_motor": "Электромотор",
+
+  "block.industrial.machine_body": "Основной корпус машины",
+  "block.industrial.improved_machine_body": "Улучшенный корпус машины",
+
+  "block.industrial.copper_wire": "Медный провод",
+
 
 
   "creativetab.industrial.bronze_ingot": "Завод"

@@ -27,6 +27,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TIN_ORE_KEY = registerKey("tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LEAD_ORE_KEY = registerKey("lead_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_URAN_ORE_KEY = registerKey("uran_ore");
 
 
 
@@ -51,6 +52,10 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, ModBlock.DEEPSLATE_LEAD_ORE.get().defaultBlockState()));
         register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLeadOres, 9));
 
+        List<OreConfiguration.TargetBlockState> overworldUranOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlock.URAN_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlock.DEEPSLATE_URAN_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_URAN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUranOres, 6));
 
         register(context, HEVEA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlock.HEVEA_LOG.get()),

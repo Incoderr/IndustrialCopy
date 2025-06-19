@@ -2,7 +2,13 @@ package net.incoder.industrial;
 
 
 import net.incoder.industrial.block.ModBlock;
+import net.incoder.industrial.entity.ModBlockEntities;
 import net.incoder.industrial.item.*;
+import net.incoder.industrial.screen.ModMenuTypes;
+import net.incoder.industrial.screen.custom.IronFurnaceScreen;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -52,6 +58,8 @@ public class Industrial {
         //Block
         ModBlock.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -89,12 +97,20 @@ public class Industrial {
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+    public static class ClientModEvents {
 
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+
+                ItemBlockRenderTypes.setRenderLayer(ModBlock.REINFORCED_GLASS.get(), RenderType.cutout());
+            });
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+
+            event.register(ModMenuTypes.IRON_FURNACE_MENU.get(), IronFurnaceScreen::new);
         }
     }
 }

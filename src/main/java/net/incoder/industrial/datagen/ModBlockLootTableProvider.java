@@ -2,6 +2,7 @@ package net.incoder.industrial.datagen;
 
 import net.incoder.industrial.block.ModBlock;
 import net.incoder.industrial.item.ModItem;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -36,13 +37,21 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlock.SILVER_BLOCK.get());
         dropSelf(ModBlock.STEEL_BLOCK.get());
 
+        dropSelf(ModBlock.REINFORCED_GLASS.get());
+        dropSelf(ModBlock.COPPER_WIRE.get());
+
+        dropSelf(ModBlock.MACHINE_BODY.get());
+        dropSelf(ModBlock.IMPROVED_MACHINE_BODY.get());
+
         add(ModBlock.TIN_ORE.get(), block -> createTinOreDrop(ModBlock.TIN_ORE.get(), ModItem.RAW_TIN.get()));
         add(ModBlock.LEAD_ORE.get(), block -> createTinOreDrop(ModBlock.LEAD_ORE.get(), ModItem.RAW_LEAD.get()));
         add(ModBlock.SILVER_ORE.get(), block -> createTinOreDrop(ModBlock.SILVER_ORE.get(), ModItem.RAW_SILVER.get()));
+        add(ModBlock.URAN_ORE.get(), block -> createTinOreDrop(ModBlock.URAN_ORE.get(), ModItem.RAW_SILVER.get()));
 
         add(ModBlock.DEEPSLATE_TIN_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_TIN_ORE.get(), ModItem.RAW_TIN.get()));
         add(ModBlock.DEEPSLATE_LEAD_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_LEAD_ORE.get(), ModItem.RAW_LEAD.get()));
         add(ModBlock.DEEPSLATE_SILVER_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_SILVER_ORE.get(), ModItem.RAW_SILVER.get()));
+        add(ModBlock.DEEPSLATE_URAN_ORE.get(), block -> createTinOreDrop(ModBlock.DEEPSLATE_URAN_ORE.get(), ModItem.RAW_SILVER.get()));
 
         this.dropSelf(ModBlock.HEVEA_LOG.get());
         this.dropSelf(ModBlock.HEVEA_WOOD.get());
@@ -50,6 +59,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlock.STRIPPED_HEVEA_WOOD.get());
         this.dropSelf(ModBlock.HEVEA_PLANKS.get());
         this.dropSelf(ModBlock.HEVEA_SAPLING.get());
+        this.dropSelf(ModBlock.IRON_FURNACE.get());
 
         this.add(ModBlock.HEVEA_LEAVES.get(), block ->
            createLeavesDrops(block, ModBlock.HEVEA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

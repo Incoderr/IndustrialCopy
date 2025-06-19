@@ -3,6 +3,7 @@ package net.incoder.industrial.item;
 import net.incoder.industrial.Industrial;
 import net.incoder.industrial.tool.CutterTool;
 import net.incoder.industrial.tool.HammerTool;
+import net.incoder.industrial.tool.TreeTap;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -11,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItem {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Industrial.MODID);
-    //Ingot
+    //INGOT
     public static final DeferredItem<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()));
 
@@ -29,7 +30,7 @@ public class ModItem {
 
     public static final DeferredItem<Item> COMPOSITE_INGOT = ITEMS.register("composite_ingot",
             () -> new Item(new Item.Properties()));
-    //Plate
+    //PLATE
     public static final DeferredItem<Item> TIN_PLATE = ITEMS.register("tin_plate",
             () -> new Item(new Item.Properties()));
 
@@ -47,7 +48,10 @@ public class ModItem {
 
     public static final DeferredItem<Item> GOLD_PLATE = ITEMS.register("gold_plate",
             () -> new Item(new Item.Properties()));
-    //Casing
+
+    public static final DeferredItem<Item> STEEL_PLATE = ITEMS.register("steel_plate",
+            () -> new Item(new Item.Properties()));
+    //CASING
     public static final DeferredItem<Item> IRON_CASING = ITEMS.register("iron_casing",
             () -> new Item(new Item.Properties()));
 
@@ -66,19 +70,34 @@ public class ModItem {
     public static final DeferredItem<Item> GOLD_CASING = ITEMS.register("gold_casing",
             () -> new Item(new Item.Properties()));
 
-    //Tool
+    //OTHER TOOL
     public static final DeferredItem<Item> HAMMER_TOOL = ITEMS.register("hammer_tool",
             () -> new HammerTool(new Item.Properties().durability(64)));
 
     public static final DeferredItem<Item> CUTTER_TOOL = ITEMS.register("cutter_tool",
             () -> new CutterTool(new Item.Properties().durability(64)));
-    //
-    public static final DeferredItem<Item> RAW_RUBBER = ITEMS.register("raw_rubber",
-            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> TREETAP = ITEMS.register("treetap",
-            () -> new Item(new Item.Properties().durability(32)));
-    //
+            () -> new TreeTap(new Item.Properties().durability(32)));
+    //OTHER
+    public static final DeferredItem<Item> RUBBER = ITEMS.register("rubber",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> COIL = ITEMS.register("coil",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ELECTRIC_DRIVE = ITEMS.register("electric_drive",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ELECTRICAL_DIAGRAM = ITEMS.register("electrical_diagram",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ELECTRIC_MOTOR = ITEMS.register("electric_motor",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> COMPOSITE = ITEMS.register("composite",
+            () -> new Item(new Item.Properties()));
+    //TOOL
     public static final DeferredItem<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(
             ToolTier.BRONZE,
             new Item.Properties().attributes(
@@ -133,7 +152,7 @@ public class ModItem {
                     )
             )
     ));
-    //armor
+    //ARMOR
     public static final DeferredItem<ArmorItem> BRONZE_HELMET = ITEMS.register("bronze_helmet",
             () -> new ArmorItem(ArmorMaterial.BRONZE_ARMOR, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))));
@@ -149,7 +168,7 @@ public class ModItem {
     public static final DeferredItem<ArmorItem> BRONZE_BOOTS = ITEMS.register("bronze_boots",
             () -> new ArmorItem(ArmorMaterial.BRONZE_ARMOR, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15))));
-    //raw ore
+    //RAW
     public static final DeferredItem<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties()));
 
@@ -157,6 +176,9 @@ public class ModItem {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAW_SILVER = ITEMS.register("raw_silver",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_RUBBER = ITEMS.register("raw_rubber",
             () -> new Item(new Item.Properties()));
     //
     public static void  register(IEventBus eventBus) {

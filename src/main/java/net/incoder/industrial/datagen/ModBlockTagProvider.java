@@ -25,6 +25,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlock.STEEL_BLOCK.get())
                 .add(ModBlock.SILVER_BLOCK.get())
 
+                .add(ModBlock.REINFORCED_GLASS.get())
+
+                .add(ModBlock.COPPER_WIRE.get())
+
+                .add(ModBlock.MACHINE_BODY.get())
+                .add(ModBlock.IMPROVED_MACHINE_BODY.get())
+
                 .add(ModBlock.TIN_ORE.get())
                 .add(ModBlock.LEAD_ORE.get())
                 .add(ModBlock.SILVER_ORE.get())
@@ -32,6 +39,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlock.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlock.DEEPSLATE_LEAD_ORE.get())
                 .add(ModBlock.DEEPSLATE_SILVER_ORE.get());
+
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlock.HEVEA_LOG.get())
